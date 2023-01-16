@@ -5,10 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PetSittersActivity">
+
     <include
+        android:id="@+id/include"
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/pet_sitter_img"
@@ -213,5 +217,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_review_dog"
         app:srcCompat="@drawable/birds_01" />
+
+    <Button
+        android:id="@+id/btn_schedule"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:text="Schedule"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_review_03" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
