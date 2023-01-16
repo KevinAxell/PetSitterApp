@@ -67,21 +67,9 @@ class LoginActivity : AppCompatActivity() {
 
     private fun validatePassword():Boolean{
         val password = txf_login_password.editText?.text.toString()
-        val passwordRegex = Pattern.compile(
-            "^" +
-                    "(?=.*[0-9])" +
-                    "(?=.*[a-z])" +
-                    "(?=.*[A-Z])" +
-                    "(?=.*[@#$%^&+=])" +
-                    "(?=\\S+$)" +
-                    ".{4,}" +
-                    "$"
-        )
+
         return if(password.isEmpty()){
             txf_login_password.error = "Field can not be empty"
-            false
-        }else if(!passwordRegex.matcher(password).matches()){
-            txf_login_password.error = "Password is too weak"
             false
         }else{
             txf_login_password.error = null
