@@ -17,13 +17,13 @@ class PetSittersList : AppCompatActivity() {
         //Mostrar los datos de los cuidadores guardados en local
 
         val petSitter1 = PetSitter("Phillip","London,United Kindom",
-            4.2f,R.drawable.img_user_01,27,"Perros, Gatos","El mejor cuidador","Muy recomendado ","Phillip el mejor")
+            4.2f,R.drawable.img_user_01,27,"Dogs and Cats","The best caretaker","Highly recommended","Phillip is the best")
 
         val petSitter2 = PetSitter("Vanessa & Ian","Beaune,France",
-            4.7f,R.drawable.img_user_02,22,"Pericos, Mapaches","Los mejores cuidadores","Muy recomendados ","Vanessa e Ian los mejores")
+                4.7f,R.drawable.img_user_02,22,"Birds and Raccoons","The best caregivers","Highly recommended","Vanessa e Ian are the best")
 
         val petSitter3 = PetSitter("Rita & Phil","Disley,United Kindom",
-            5.0f,R.drawable.img_user_03,24,"Ratones, Serpientes","Los mejores cuidadores","Muy recomendados ","Rita y Phil los mejores")
+            5.0f,R.drawable.img_user_03,24,"Rats and Snakes","The best caregivers","Highly recommendes","Rita y Phil are the best")
 
         val listPetSitters = listOf(petSitter1,petSitter2,petSitter3)
 

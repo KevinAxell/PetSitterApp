@@ -16,7 +16,7 @@ class PetSittersActivity : AppCompatActivity() {
 
 
         pet_sitter_name.text = petSitter.name
-        pet_sitter_age.text = "${petSitter.age}" + " años"
+        pet_sitter_age.text = "${petSitter.age}" + " years"
         pet_sitter_address.text =petSitter.address
         pet_sitter_img.setImageResource(petSitter.image)
         pet_sitter_pets.text =petSitter.typeOfPets

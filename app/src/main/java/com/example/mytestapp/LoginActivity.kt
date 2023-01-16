@@ -43,7 +43,7 @@ class LoginActivity : AppCompatActivity() {
             return
         }
         if(handler.selectDB(txf_login_email.editText?.text.toString(),txf_login_password.editText?.text.toString())){
-            Toast.makeText(this,"Usuario Logeado Correctamente",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"User Login Success",Toast.LENGTH_SHORT).show()
             val intent : Intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }else{

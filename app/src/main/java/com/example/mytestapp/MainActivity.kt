@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
 
-        MyToolBar().show(this,"Bienvenido a Pet Sitters",false,true)
+        MyToolBar().show(this,"Welcome to Pet Sitters",false,true)
 
         val toolbar: Toolbar = findViewById(R.id.toolbar_main)
 

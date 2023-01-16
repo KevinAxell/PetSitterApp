@@ -37,7 +37,7 @@ class SignUpActivity : AppCompatActivity() {
             validate()
             return true
         }else{
-            Toast.makeText(this,"Acepta los permisos de privacidad",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Accept the privacy permissions.",Toast.LENGTH_SHORT).show()
             return false
         }
     }
@@ -51,7 +51,7 @@ class SignUpActivity : AppCompatActivity() {
         val result = arrayOf(validateEmail(),validatePassword(),validateThing(name),validateThing(lastname),validateThing(address),validateThing(phone))
 
         if(false in result){
-            Toast.makeText(this,"Error al registrar Usuario",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Failed to register User",Toast.LENGTH_SHORT).show()
             return
         }
 
@@ -63,7 +63,7 @@ class SignUpActivity : AppCompatActivity() {
                 txf_address.editText?.text.toString(),
                 txf_phone.editText?.text.toString())
 
-            Toast.makeText(this,"Usuario Registrado Correctamente",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"User Sign Up Success",Toast.LENGTH_SHORT).show()
 
 
     }
